@@ -1,0 +1,452 @@
+@import "nullstyle.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+	font-family: 'Geo';
+	src: url('../fonts/geo.eot');
+	src: local('☺'), url('../fonts/geo.woff') format('woff'), url('../fonts/geo.ttf') format('truetype'), url('../fonts/geo.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/AvenirNextLTPro-DemiCn.eot');
+	src: local('☺'), url('../fonts/AvenirNextLTPro-DemiCn.woff') format('woff'), url('../fonts/AvenirNextLTPro-DemiCn.ttf') format('truetype'), url('../fonts/AvenirNextLTPro-DemiCn.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$green : #01996D; 
+$dark-green : #245852;
+
+
+.wrapper {
+    width: 1920px;
+    background-color: #fff;
+    border: 1px solid black;
+}
+.content {
+
+}
+.button{
+    font-family: 'Lato', sans-serif;
+    padding: 20px 50px;
+    background-color: $green;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+.container {
+    margin: 0 auto;
+    width: 1370px;
+}
+.header {
+    margin: 0;
+		&__row {
+            height: 85px;
+            display: flex;
+            align-items: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;    
+		}
+
+		&__logo {
+            width: 80px;
+            margin: 0 135px 0 0;
+		}
+
+		&__navigation {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+		}
+        &__item{
+            //display: block;
+            color: #292929;
+            margin: 0 35px;
+            font-weight: 500;
+            &_400{
+                font-weight: 400;
+            }
+        }
+
+		&__sign {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: row;;
+            justify-content: flex-end;
+            align-items: center;
+		}
+
+        &__button{
+            padding: 0; 
+            line-height: 50px;
+            text-align: center;
+            width: 185px;
+            height: 51px;
+        }
+
+    }
+.introduction {
+        height: 885px;
+        background: url("../img/radu-florin-CwTBt6jyagQ-unsplash 3.png")  no-repeat, 
+        url("../img/radu-florin-CwTBt6jyagQ-unsplash 1.png") 190px 0px no-repeat,
+        url("../img/radu-florin-CwTBt6jyagQ-unsplash 4.png") no-repeat;
+        margin: 0 0 150px 0;
+
+		&__column {
+            padding: 75px 0 0 0;
+            width: 440px;
+		}
+
+		&__title {
+            font-family: 'Geo';
+            font-weight: 700;
+            font-size: 65px;
+            color: $green;
+            margin: 0 0 30px 0;
+            line-height: 74px;
+		}
+
+		&__text {
+            width: 420px;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 400;
+            margin: 0 0 60px 0;
+            color: #484848;
+		}
+}
+
+.how {
+    margin: 0 0 50px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__hint {
+        font-family: 'Lato';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 38px;
+        color: #424242;
+    }
+
+    &__title {
+        flex: 0 0 585px;
+        font-family: "Geo";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 78px;
+        color: $green;
+    }
+
+    &__description {
+        padding: 20px 0 0 0;    
+        flex-basis: 670px;
+        font-family: 'Lato';
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #424242;
+    }
+}
+
+.steps {
+    margin: 0 0 50px 0;
+    
+    &__row {
+        height: 1240px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__column {
+        height: 855px;
+        width: 392px;
+        position: relative; 
+        &_1{
+            align-self: flex-start;
+        }
+        &_2{
+            align-self: flex-end;
+        }
+        &_3{
+            align-self: flex-start;
+        }
+    }
+  
+    &__number{
+        width: 157px;
+        height: 225px;
+        margin: 0 0 10px 0;
+        
+        &_1{
+            background: url("../img/01.svg") center 70% no-repeat;
+        }
+
+        &_2{
+            background: url("../img/02.svg") center 70% no-repeat;
+        }
+
+        &_3{
+            background: url("../img/03.svg") center 70% no-repeat;
+        }
+    }
+
+
+    &__title {
+        position: absolute;
+        top: 155px;
+        font-family: "Geo";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+        
+        &_1{
+            left: 88px;
+        }
+        &_2{
+            left: 79px; 
+        }
+        &_3{
+            left: 124px;  
+        }
+    }
+
+    &__description {
+        font-family: "Lato";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        margin: 0 0 50px 0;
+        color: #424242;
+    }
+
+    &__picture {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        
+        &_1{
+            background: url("../img/image 30.png") 210px 230px no-repeat, url("../img/Rectangle 30(1).png") no-repeat;
+        }
+        &_2{
+            background: url("../img/Rectangle 30(2).png") no-repeat;
+        }
+        &_3{
+            background: url("../img/Rectangle 30(3).png") no-repeat;
+        }
+    }
+
+}
+
+.story {
+    background-color: $dark-green;
+
+    &__row {
+        height: 922px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__column {
+        width: 580px;   
+    }
+
+    &__title {
+        font-family: "Geo";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 79px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        margin : 0 0 33px 0;
+    }
+
+    &__text {
+        width: 580px;
+        font-family: "Lato";
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 39px;
+        text-align: left;
+        color: #fff;
+        margin: 0 0 57px 0;
+    }
+
+    &__video {
+        width: 895px;
+        height: 516px;
+        border-radius: 16px;
+        background: url("../img/arrow.png") 51% 50% no-repeat,
+                    url("../img/circle.png") center no-repeat,
+                    url("../img/Rectangle 9.png") center no-repeat,
+                    url("../img/Rectangle 8.png") center no-repeat;
+    }
+}
+
+.product {
+    
+    background-color: #fff;
+    padding: 120px 0 160px 0;
+
+    &__row {
+        height: 650px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__picture {
+        position: relative;
+        width: 700px;
+        height: 100%;
+        background: url("../img/court-cook-TSZo17r3m0s-unsplash-removebg 1.png") 55% top no-repeat,
+                    url("../img/Rectangle 15.png") right top  no-repeat;
+    }
+
+    &__card{
+        width: 296px;
+        height: 294px;
+        position: absolute;
+        bottom: 0;
+        background: #fff;
+        padding: 22px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 10px 1px rgb(192, 185, 185);
+    }
+    &__title-mini {
+        font-family: "Lato";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 23px;
+        text-align: center;
+        color: #000;
+        margin: 0 0 8px 0;
+
+    }
+    &__line{
+        width:110px;
+        height: 1px;
+        background: #000;
+        margin: 0 0 15px 0;
+    }
+
+    &__picture-mini {
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        border-radius: 50%;
+        background: url("../img/Ellipse 2.png") no-repeat,
+                    url("../img/court-cook-TSZo17r3m0s-unsplash-removebg 2.png") no-repeat,
+                    url("../img/Ellipse 3.png") no-repeat;
+        margin: 0 0 10px 0;
+    }
+
+    &__name-mini {
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: center;
+        color: #000;
+        margin: 0 0 20px 0;
+    }
+
+    &__customized-mini {
+        font-family: "Geo";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: left;
+        margin: 0 0 16px 0;
+        color: #000;
+    }
+
+    &__description-mini {
+        width: 180px;
+        font-family: "Lato";
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        margin: 0 0 15px 0;
+        color: #000;
+    }
+
+    &__column {
+        width: 584px;
+    }
+
+    &__hint {
+        font-family: "Lato";
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 39px;
+        text-align: left;
+        margin: 0 0 10px 0;
+    }
+
+    &__title {
+        font-family: "Geo";
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 79px;
+        text-align: left;
+        color: $green;
+        margin: 0 0 20px 0;
+    }
+
+    &__text {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 31px;
+        text-align: left;
+        margin: 0 0 40px 0;
+    }
+}
+
+.footer {
+    padding: 95px 0 80px 0;
+    background: $dark-green;
+    color: #fff;
+
+    &__title {
+        font-family: "Avenir";
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 55px;
+        text-align: left; 
+        margin: 0 0 60px 0;
+    }
+
+    &__item {
+        display: block;
+        font-family: Lato;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+        color: #fff;
+        margin: 0 0 60px 0;
+
+    }
+}
+
+
+
